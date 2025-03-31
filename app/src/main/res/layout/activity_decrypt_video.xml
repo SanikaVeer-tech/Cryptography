@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic"
+    android:padding="16dp">
+
+    <!-- Button to Select Encrypted Video -->
+    <Button
+        android:id="@+id/btnSelectEncryptedVideo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Select Encrypted Video"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- EditText to Enter Encrypted Key -->
+    <EditText
+        android:id="@+id/editTextEncryptedKey"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Encrypted Key"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSelectEncryptedVideo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button to Decrypt Video -->
+    <Button
+        android:id="@+id/btnDecrypt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Decrypt Video"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextEncryptedKey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button to Extract Hidden Message -->
+    <Button
+        android:id="@+id/btnExtractMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Extract Hidden Message"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btnDecrypt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnPlayHiddenVideo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Play Hidden Video"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btnExtractMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- TextView to Show Extracted Message -->
+    <TextView
+        android:id="@+id/textViewExtractedMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Extracted Message:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btnPlayHiddenVideo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- VideoView to Display Decrypted Video -->
+    <VideoView
+        android:id="@+id/videoViewDecrypted"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewExtractedMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

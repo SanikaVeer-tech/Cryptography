@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "680679041925",
+    "project_id": "cryptography-a2948",
+    "storage_bucket": "cryptography-a2948.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680679041925:android:37c2dbd7012fa16ca6f2ec",
+        "android_client_info": {
+          "package_name": "com.example.cryptography"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCTL_i9hA-luMikdsZ3OPKduYi4yT9SSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
